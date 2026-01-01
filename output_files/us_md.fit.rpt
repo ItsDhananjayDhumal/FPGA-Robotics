@@ -1,5 +1,5 @@
 Fitter report for us_md
-Thu Jan 01 21:26:57 2026
+Thu Jan 01 21:36:23 2026
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Thu Jan 01 21:26:57 2026       ;
+; Fitter Status                      ; Successful - Thu Jan 01 21:36:23 2026       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; us_md                                       ;
 ; Top-level Entity Name              ; us_md                                       ;
@@ -153,19 +153,19 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 20          ;
 ; Maximum allowed            ; 14          ;
 ;                            ;             ;
-; Average used               ; 1.19        ;
+; Average used               ; 1.23        ;
 ; Maximum used               ; 14          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.6%      ;
-;     Processor 3            ;   1.5%      ;
-;     Processor 4            ;   1.5%      ;
-;     Processor 5            ;   1.5%      ;
-;     Processor 6            ;   1.5%      ;
-;     Processor 7            ;   1.5%      ;
-;     Processor 8            ;   1.4%      ;
-;     Processors 9-14        ;   1.4%      ;
+;     Processor 2            ;   1.9%      ;
+;     Processor 3            ;   1.9%      ;
+;     Processor 4            ;   1.8%      ;
+;     Processor 5            ;   1.8%      ;
+;     Processor 6            ;   1.8%      ;
+;     Processor 7            ;   1.8%      ;
+;     Processor 8            ;   1.8%      ;
+;     Processors 9-14        ;   1.8%      ;
 +----------------------------+-------------+
 
 
@@ -1344,7 +1344,7 @@ Info (176353): Automatically promoted node sld_signaltap:auto_signaltap_0|sld_si
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1366,9 +1366,9 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file C:/intelFPGA_lite/20.1/us_md/output_files/us_md.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 6365 megabytes
-    Info: Processing ended: Thu Jan 01 21:26:57 2026
-    Info: Elapsed time: 00:00:11
+    Info: Peak virtual memory: 6369 megabytes
+    Info: Processing ended: Thu Jan 01 21:36:23 2026
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:15
 
 

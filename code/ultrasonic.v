@@ -1,18 +1,17 @@
 /*
 Module HC_SR04 Ultrasonic Sensor
 
-This module will detect objects present in front of the range, and give the distance in mm.
+Distance is in mm.
 
 Input:  clk_50M - 50 MHz clock
-        reset   - reset input signal (Use negative reset)
+        reset   - reset input signal (active low)
         echo_rx - receive echo from the sensor
 
 Output: trig    - trigger sensor for the sensor
-        op     -  output signal to indicate object is present.
-        distance_out - distance in mm, if object is present.
+        op     -  output signal to indicate object is present (distance smaller than 70 mm).
+        distance_out - distance in mm
 */
 
-// module Declaration
 module ultrasonic(
     input clk_50M, reset, echo_rx,
     output reg trig,
@@ -23,15 +22,11 @@ module ultrasonic(
 initial begin
     trig = 0;
 end
-//////////////////DO NOT MAKE ANY CHANGES ABOVE THIS LINE //////////////////
 
 parameter WAIT = 0,
-			 HIGH = 1,
-			 LOW = 2,
-			 IDLE = 3;
-			 
-
-//integer counter, echo_counter;
+		  HIGH = 1,
+		  LOW = 2,
+		  IDLE = 3;
 
 reg [1:0] state;
 reg [19:0] counter;
@@ -121,7 +116,5 @@ end
 
 assign distance_out = distance;
 assign op = (distance_out < 71) ? 1'b1 : 1'b0;
-
-//////////////////DO NOT MAKE ANY CHANGES BELOW THIS LINE //////////////////
 
 endmodule

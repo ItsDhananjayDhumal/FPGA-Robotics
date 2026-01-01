@@ -8,7 +8,6 @@ module pwm_generator(
 initial begin
     clk_195KHz = 0; pwm_signal = 1;
 end
-//////////////////DO NOT MAKE ANY CHANGES ABOVE THIS LINE //////////////////
 
 reg [3:0] counter = 4'd0;
 
@@ -20,7 +19,5 @@ end
 always @(posedge clk_3125KHz) begin
 	pwm_signal <= (counter < duty_cycle) ? 1'b1 : 1'b0;
 end
-
-//////////////////DO NOT MAKE ANY CHANGES BELOW THIS LINE //////////////////
 
 endmodule

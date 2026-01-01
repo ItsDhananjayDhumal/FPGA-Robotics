@@ -12,6 +12,22 @@
 					"strict" : false
 				},
 				{
+					"name" : "trig3",
+					"strict" : false
+				},
+				{
+					"name" : "op_left",
+					"strict" : false
+				},
+				{
+					"name" : "op_right",
+					"strict" : false
+				},
+				{
+					"name" : "op_front",
+					"strict" : false
+				},
+				{
 					"name" : "ena",
 					"strict" : false
 				},
@@ -20,83 +36,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "left_counter[0]",
+					"name" : "end_signal[0]",
 					"strict" : false
 				},
 				{
-					"name" : "left_counter[1]",
+					"name" : "end_signal[1]",
 					"strict" : false
 				},
 				{
-					"name" : "left_counter[2]",
+					"name" : "ir_down",
 					"strict" : false
 				},
 				{
-					"name" : "left_counter[3]",
-					"strict" : false
-				},
-				{
-					"name" : "left_counter[4]",
-					"strict" : false
-				},
-				{
-					"name" : "left_counter[5]",
-					"strict" : false
-				},
-				{
-					"name" : "left_counter[6]",
-					"strict" : false
-				},
-				{
-					"name" : "left_counter[7]",
-					"strict" : false
-				},
-				{
-					"name" : "left_counter[8]",
-					"strict" : false
-				},
-				{
-					"name" : "left_counter[9]",
-					"strict" : false
-				},
-				{
-					"name" : "left_counter[10]",
-					"strict" : false
-				},
-				{
-					"name" : "left_counter[11]",
-					"strict" : false
-				},
-				{
-					"name" : "left_counter[12]",
-					"strict" : false
-				},
-				{
-					"name" : "left_counter[13]",
-					"strict" : false
-				},
-				{
-					"name" : "left_counter[14]",
-					"strict" : false
-				},
-				{
-					"name" : "left_counter[15]",
-					"strict" : false
-				},
-				{
-					"name" : "left_counter[16]",
-					"strict" : false
-				},
-				{
-					"name" : "left_counter[17]",
-					"strict" : false
-				},
-				{
-					"name" : "left_counter[18]",
-					"strict" : false
-				},
-				{
-					"name" : "left_counter[19]",
+					"name" : "ir_up",
 					"strict" : false
 				},
 				{
@@ -116,11 +68,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "re_left_2",
-					"strict" : false
-				},
-				{
-					"name" : "re_left_1",
+					"name" : "echo3",
 					"strict" : false
 				},
 				{

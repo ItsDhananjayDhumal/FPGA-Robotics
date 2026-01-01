@@ -42,6 +42,7 @@ motor_driver driver_inst (.clk_3125KHz(clk_3125KHz),
                           .in4(in4),
                           .ena(ena),
                           .enb(enb),
+                          .stop(op_front),
                           .dist_left(dist_left),
                           .dist_right(dist_right));
 

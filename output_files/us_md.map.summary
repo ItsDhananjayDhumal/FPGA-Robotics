@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Thu Jan 01 21:36:16 2026
+Analysis & Synthesis Status : Successful - Fri Jan 02 02:07:54 2026
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : us_md
 Top-level Entity Name : us_md
 Family : Cyclone IV E
-Total logic elements : 3,601
-    Total combinational functions : 3,207
-    Dedicated logic registers : 890
-Total registers : 890
+Total logic elements : 3,762
+    Total combinational functions : 3,251
+    Dedicated logic registers : 1,035
+Total registers : 1035
 Total pins : 25
 Total virtual pins : 0
-Total memory bits : 98,304
+Total memory bits : 147,456
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0

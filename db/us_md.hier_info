@@ -576,6 +576,8 @@ clk_3125KHz <= clk_3125KHz~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 |us_md|motor_driver:driver_inst
 clk_3125KHz => clk_3125KHz.IN2
+stop => in2.DATAIN
+stop => in4.DATAIN
 dist_left[0] => Add1.IN56
 dist_left[0] => Add0.IN33
 dist_left[1] => Add1.IN55
@@ -643,9 +645,9 @@ dist_right[15] => Add2.IN18
 ena <= pwm_generator:left_speed_control.pwm_signal
 enb <= pwm_generator:right_speed_control.pwm_signal
 in1 <= <VCC>
-in2 <= <GND>
+in2 <= stop.DB_MAX_OUTPUT_PORT_TYPE
 in3 <= <VCC>
-in4 <= <GND>
+in4 <= stop.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |us_md|motor_driver:driver_inst|pwm_generator:left_speed_control

@@ -1,0 +1,1 @@
+Info (10281): Verilog HDL Declaration information at motor_driver.v(2): object "stop" differs only in case from object "STOP" in the same scope File: C:/intelFPGA_lite/20.1/us_md/code/motor_driver.v Line: 2

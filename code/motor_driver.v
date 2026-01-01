@@ -1,5 +1,5 @@
 module motor_driver (
-    input clk_3125KHz,
+    input clk_3125KHz, stop,
     input wire [15:0] dist_left, dist_right,
     output ena, enb,
     output in1, in2, in3, in4
@@ -23,6 +23,6 @@ pwm_generator right_speed_control (.clk_3125KHz(clk_3125KHz),
                                    .duty_cycle(right_ds),
                                    .pwm_signal(enb));
 
-assign {in1, in2, in3, in4} = 4'b1010;
+assign {in1, in2, in3, in4} = ( ~ stop) ? 4'b1010 : 4'b1111;
 
 endmodule

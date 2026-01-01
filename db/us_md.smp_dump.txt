@@ -1,0 +1,14 @@
+
+State Machine - |us_md|ultrasonic:us_inst2|state
+Name state.IDLE state.LOW state.HIGH state.WAIT 
+state.WAIT 0 0 0 0 
+state.HIGH 0 0 1 1 
+state.LOW 0 1 0 1 
+state.IDLE 1 0 0 1 
+
+State Machine - |us_md|ultrasonic:us_inst1|state
+Name state.IDLE state.LOW state.HIGH state.WAIT 
+state.WAIT 0 0 0 0 
+state.HIGH 0 0 1 1 
+state.LOW 0 1 0 1 
+state.IDLE 1 0 0 1 

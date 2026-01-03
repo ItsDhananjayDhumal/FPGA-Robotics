@@ -1,15 +1,18 @@
 module us_md(
+    input rx_uart,
     input clk_50M, reset, echo1, echo2, echo3,
     input re_left_1, re_left_2, re_right_1, re_right_2,
     input ir_up, ir_down,
     output trig1, trig2, trig3, op_left, op_right, op_front,
     output in1, in2, in3, in4, ena, enb,
-    output [1:0] end_signal
+    output [1:0] end_signal,
+    output [3:0] test_leds
 );
 
 wire clk_3125KHz;
 wire [15:0] dist_left, dist_right, dist_front;
 wire [19:0] left_counter, right_counter;
+wire [7:0] rx_msg;
 
 ultrasonic us_inst1 (.clk_50M(clk_50M),
                      .echo_rx(echo1),
@@ -64,5 +67,12 @@ end_recog recog_inst (.ir_up(ir_up),
                       .op_right(op_right),
                       .op_front(op_front),
                       .end_signal(end_signal));
+                    
+uart_rx rx_inst (.clk_3125KHz(clk_3125KHz),
+                 .rx(rx_uart),
+                 .rx_msg(rx_msg));
+
+assign test_leds = (rx_msg == 8'b01100001) ? 4'b1000 : (rx_msg == 8'b01100010) ? 4'b0100 : (rx_msg == 8'b01100011) ? 4'b0010 : 4'b0001;
+// a OR b OR c OR else
 
 endmodule
